@@ -22,7 +22,7 @@ export default function Navbar() {
         <header className={`bg-transparent ${scrolling ? "navbar-fixed" : ""} top-0 left-0 w-full flex items-center z-10`}>
             <div className="container">
                 <div className="flex items-center justify-between relative">
-                    <div className="px-4">
+                    <div>
                         <a href="#home" className="font-bold text-lg text-primary block py-6">Aditya Pratama</a>
                     </div>
                     <div className="flex items-center px-4">
