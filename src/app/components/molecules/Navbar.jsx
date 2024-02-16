@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react'
 export default function Navbar() {
     const [scrolling, setScrolling] = useState(false);
     const [scrollTop, setScrollTop] = useState(0)
-    const [toggle, setToggle] = useState(true);
+    const [toggle, setToggle] = useState(false);
 
     const hideNavbar = () => {
         setToggle(!toggle)
@@ -31,6 +31,7 @@ export default function Navbar() {
         }
         window.addEventListener('resize', onResize)
         document.addEventListener('scroll', onScroll)
+        onResize()
     }, [])
     return (
         <header className={`bg-transparent absolute ${scrolling ? "navbar-fixed" : ""} top-0 left-0 w-full flex items-center z-10`}>
