@@ -5,8 +5,7 @@ import { useState, useEffect } from 'react'
 export default function Navbar() {
     const [scrolling, setScrolling] = useState(false);
     const [scrollTop, setScrollTop] = useState(0)
-    const [toggle, setToggle] = useState(false);
-    const [widths, setWidth] = useState(0)
+    const [toggle, setToggle] = useState(true);
 
     const hideNavbar = () => {
         setToggle(!toggle)
@@ -38,7 +37,7 @@ export default function Navbar() {
             <div className="container">
                 <div className="flex items-center justify-between relative">
                     <div>
-                        <a href="#home" className="font-bold text-lg text-primary block py-6">Aditya Pratama {widths}</a>
+                        <a href="#home" className="font-bold text-lg text-primary block py-6">Aditya Pratama</a>
                     </div>
                     <div className="flex items-center px-4">
                         <Hamburger onClick={hideNavbar} isActive={toggle} />
