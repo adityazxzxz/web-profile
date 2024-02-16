@@ -3,7 +3,7 @@ import Subtitle from '../atoms/Subtitle'
 import HeroAvatar from '../atoms/HeroAvatar'
 export default function Hero() {
     return (
-        <section id='home' className='sm:pt-32'>
+        <section id='home' className='pt-32'>
             <div className="container">
                 <div className="flex flex-wrap">
                     <div className="w-full self-center px-15 lg:px-24 lg:w-1/2">
