@@ -6,7 +6,7 @@ export default function PortfolioSection() {
                     <div className="max-w-xl mx-auto text-center mb-16">
                         <h4 className="font-semibold text-lg text-primary mb-2">Portfolio</h4>
                         <h2 className="font-bold text-dark text-3xl mb-4">Latest Project</h2>
-                        <p className="font-medium text-medium text-secondary">In my Latest Project section, you'll find information about my most recent completed projects, showcasing my latest work and achievements.</p>
+                        <p className="font-medium text-medium text-secondary">In my Latest Project section, you&apos;ll find information about my most recent completed projects, showcasing my latest work and achievements.</p>
                     </div>
                 </div>
                 <div className="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
