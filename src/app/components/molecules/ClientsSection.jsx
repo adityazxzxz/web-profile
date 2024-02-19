@@ -16,9 +16,9 @@ export default function ClientsSection() {
                 <div className="w-full px-4">
                     <div className="flex flex-wrap items-center justify-center">
                         {
-                            clients.map(client => <a href="#" className="max-w-[120px] mx-4 py-4 grayscale transition hover:grayscale-0 duration-500 lg:mx-6 xl:mx-8">
+                            clients.map((client, index) => <a href="#" className="max-w-[120px] mx-4 py-4 grayscale transition hover:grayscale-0 duration-500 lg:mx-6 xl:mx-8">
                                 {/* <img src={`image/clients/reliance.svg`} alt='reliance' /> */}
-                                <Image src={`image/clients/reliance.svg`} alt='reliance' width={500} height={500} />
+                                <Image src={`image/clients/reliance.svg`} key={index} alt='reliance' width={500} height={500} />
                             </a>)
                         }
                     </div>
