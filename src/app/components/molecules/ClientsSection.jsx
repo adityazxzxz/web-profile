@@ -1,4 +1,7 @@
+import Image from 'next/image'
 export default function ClientsSection() {
+    const clients = ["reliance"]
+
     return (
         <section id='clients' className="pt-36 pb-32 bg-slate-700">
             <div className="container">
@@ -12,15 +15,12 @@ export default function ClientsSection() {
 
                 <div className="w-full px-4">
                     <div className="flex flex-wrap items-center justify-center">
-                        <a href="#" className="max-w-[120px] mx-4 py-4 grayscale transition hover:grayscale-0 duration-500 lg:mx-6 xl:mx-8">
-                            <img src={`image/clients/reliance.svg`} alt='reliance' />
-                        </a>
-                        {/* <a href="#" className="max-w-[120px] mx-4 py-4 grayscale transition hover:grayscale-0 duration-500 lg:mx-6 xl:mx-8">
-                            <img src={`image/clients/reliance.svg`} alt='reliance' />
-                        </a>
-                        <a href="#" className="max-w-[120px] mx-4 py-4 grayscale transition hover:grayscale-0 duration-500 lg:mx-6 xl:mx-8">
-                            <img src={`image/clients/reliance.svg`} alt='reliance' />
-                        </a> */}
+                        {
+                            clients.map(client => <a href="#" className="max-w-[120px] mx-4 py-4 grayscale transition hover:grayscale-0 duration-500 lg:mx-6 xl:mx-8">
+                                {/* <img src={`image/clients/reliance.svg`} alt='reliance' /> */}
+                                <Image src={`image/clients/reliance.svg`} alt='reliance' width={500} height={500} />
+                            </a>)
+                        }
                     </div>
                 </div>
             </div>
