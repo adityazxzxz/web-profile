@@ -9,7 +9,7 @@ export default function Hero() {
                     <div className="w-full self-center px-15 lg:px-24 lg:w-1/2">
                         <h1 className='text-base font-semibold text-primary md:text-xl'>Hello there, I am <span className='block text-dark text-4xl lg:text-5xl'>Aditya Pratama</span></h1>
                         <Subtitle />
-                        <p className='font-medium text-slate-400 mb-10 leading-relaxed'>keep learning, stay humble and stay grateful </p>
+                        <p className='font-medium text-slate-400 mb-10 leading-relaxed'>A hopeless people sees difficulties in every chance, but a hopeful person sees chances in every difficulty</p>
                         <Button />
                     </div>
                     <div className="w-full self-end px-4 lg:w-1/2">
